@@ -15,5 +15,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": []
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Naveenp999/Cricket_SQLITE_ExpressJS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Naveenp999/Cricket_SQLITE_ExpressJS/issues"
+  },
+  "homepage": "https://github.com/Naveenp999/Cricket_SQLITE_ExpressJS#readme"
 }
