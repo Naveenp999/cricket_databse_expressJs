@@ -7,7 +7,7 @@ const app = express()
 const path = require('path')
 const filepath = path.join(__dirname, 'cricketTeam.db')
 
-app.use(express.json());
+app.use(express.json())
 
 let db = null
 
@@ -87,16 +87,15 @@ app.get('/players/:playerId/', async (request, response) => {
   response.send(newData)
 })
 
-app.delete('/players/:playerId/',async(request,response) => {
+app.delete('/players/:playerId/', async (request, response) => {
   const {playerId} = request.params
-  const query =  
-  `DELETE FROM  
+  const query = `DELETE FROM  
     cricket_team
    WHERE 
     player_id = ${playerId};
   `
-  await db.run(query);
-  response.send('Player Removed');
+  await db.run(query)
+  response.send('Player Removed')
 })
 
 module.exports = app
